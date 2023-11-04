@@ -1,1 +1,398 @@
-l
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            margin-left: 30px;
+        }
+
+        .header-1 {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlDTccj7A1oh0Dw0PZDEUA25Fpz8ce-6QHkA&usqp=CAU");
+            background-size: cover;
+            /* Adjust this as needed */
+            background-position: center;
+            /* Adjust this as needed */
+            height: 70px;
+            /* Set the height as needed */
+            display: flex;
+            cursor: pointer;
+            justify-content: center;
+        }
+
+        .first-div {
+            display: flex;
+            align-items: center;
+            margin-right: 250px;
+        }
+
+        .chase-business {
+            display: flex;
+            justify-content: center;
+        }
+
+        .menu-icon {
+            color: white;
+            padding: 30px;
+            margin-top: 8px;
+        }
+
+        .menu-icoon2 {
+            display: flex;
+            justify-content: flex-end;
+            margin-left: 100px;
+            align-items: center;
+        }
+
+        .menu-icon2 {
+            color: white;
+            padding: 50px;
+
+        }
+
+        .menu-div,
+        .menu-div2,
+        .menu-div-amount {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .menu-div {
+            align-items: center;
+            background-color: #002f6c;
+        }
+
+        .menu-div2 {
+            background-color: rgb(239, 232, 232);
+            border: 2px solid rgb(202, 198, 198);
+        }
+
+        .menu-div2 nav li {
+            color: black;
+
+
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        nav li {
+            margin: 10px;
+            color: white;
+            padding: 0 25px;
+            cursor: pointer;
+        }
+
+        .menu-div ul li {
+            position: relative;
+            transition: all 0.3s;
+        }
+
+        .menu-div ul li::after {
+            content: "";
+            display: block;
+            height: 3px;
+            background-color: transparent;
+            position: absolute;
+            bottom: -15px;
+            left: 0;
+            width: 0;
+            transition: all 0.3s;
+        }
+
+        .menu-div ul li:hover::after {
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .menu-div2 ul li {
+            position: relative;
+            transition: all 0.3s;
+        }
+
+        .menu-div2 ul li::after {
+            content: "";
+            display: block;
+            height: 3px;
+            background-color: transparent;
+            position: absolute;
+            bottom: -20px;
+            left: 0;
+            width: 0;
+            transition: all 0.3s;
+        }
+
+        .menu-div2 ul li:hover::after {
+            width: 100%;
+            background-color: rgb(28, 27, 119);
+
+        }
+
+        .showing-div {
+            display: flex;
+            padding: 5px;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(255, 255, 255);
+            border: 3px solid rgb(238, 226, 226);
+        }
+
+        .showing-direct-div {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-div {
+            display: flex;
+            align-items: flex-end;
+            gap: 10px;
+        }
+
+        .details-container {
+            align-items: center;
+            padding: 20px;
+        }
+
+        .Account-div {
+            padding: 15px;
+            border: 2px solid rgb(228, 219, 219);
+            margin-top: 50px;
+            display: flex;
+            color: white;
+            justify-content: center;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlDTccj7A1oh0Dw0PZDEUA25Fpz8ce-6QHkA&usqp=CAU");
+        }
+
+        .bank-div {
+            padding: 10px;
+            border: 1px solid rgb(228, 223, 223);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .menu-div-amount {
+            background-color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .menu-div-amount nav li {
+            margin: 10px;
+            color: rgb(20, 19, 19);
+            padding: 0 25px;
+            cursor: pointer;
+        }
+
+        @media screen and (min-width: 280px) and (max-width: 1200px) {
+            body {
+                margin: 0;
+                font-size: 10px;
+            }
+
+            .first-div {
+                display: none;
+                /* Hide all child div elements */
+            }
+
+            .chase-business {
+                display: flex;
+                align-items: center;
+                margin-right: 50px;
+            }
+
+            .menu-icoon2 {
+                display: none;
+            }
+
+            .menu-div ul li {
+                padding: 5px;
+                margin-right: 5px;
+            }
+
+            .menu-div2 {
+                flex-direction: row;
+                display: flex;
+            }
+
+            .menu-div2 ul li {
+                position: relative;
+                transition: all 0.3s;
+                width: 50%;
+            }
+
+            .search-div {
+                display: none;
+            }
+
+            .showing-direct-div select {
+                margin-left: 130px;
+                width: 50%;
+            }
+
+            .bank-div {
+                margin-bottom: 10px;
+            }
+
+            .showing-div {
+                margin-left: 10px;
+            }
+
+            .menu-div-amount nav ul li {
+                font-size: 15px;
+                margin-right: 10px;
+                margin-top: -20px;
+                margin-bottom: -10px;
+                padding: 8px;
+                margin-left: -20px;
+            }
+
+            .commercial-list-div {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header-1">
+        <div class="first-div">
+            <i class="fas fa-bars menu-icon"></i>
+            <i class="fa-sharp fa-light fa-comment-plus fa-flip-horizontal"></i>
+            <i class="fa-solid fa-font-awesome menu-icon"></i></li>
+            <div style="color:white; margin-top: 7px;margin-right: -15px;">Explore products</div>
+            <i class="fas fa-chevron-down menu-icon" style="font-size: 12px;"></i>
+        </div>
+
+        <div class="chase-business">
+            <p class="BUSINESS" style="color: white; margin-left: 50px; margin-top: 25px; font-size:
+        xx-large; font-family: Arial, Helvetica, sans-serif; font-family: helvetica;"> CHASE </p>
+            <p style="margin-top: 35px; margin-left: 5px; color: rgb(219, 211, 211); font-family: robo;">for</p>
+            <p
+                style="color: white; margin-top: 25px; font-size: xx-large; color: rgb(219, 211, 211); margin-left: 3px;">
+                BUSINESS</p>
+        </div>
+
+
+
+        <div class="menu-icoon2">
+            <i class="fas fa-search menu-icon2"></i>
+            <i class="fas fa-user menu-icon2"></i>
+        </div>
+    </div>
+    <div class="menu-div">
+        <nav>
+            <ul>
+                <li>Accounts</li>
+                <li>Pay & transfer</li>
+                <li>Collect & deposit</li>
+                <li>Account Management</li>
+            </ul>
+        </nav>
+    </div>
+    <div class="menu-div2">
+        <nav>
+            <ul>
+                <li>Summary</li>
+                <li>Activity</li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <div style="background-color: #002f6c; padding: 3px; margin-top: 50px;">
+    </div>
+    <div class="showing-div">
+        <div class="showing-direct-div">
+            <label style="color: black; font-size: 20px; margin-right: 10px;">Showing</label>
+            <select style="padding: 20px; border: 2px solid rgb(213, 205, 205);" name="text" id="">
+                <option style="font-weight: bold;" value="text">All accounts</option>
+            </select>
+        </div>
+        <div class="search-div">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search transactions">
+            <i class="fas fa-info-circle"></i>
+            <i class="fas fa-print"></i>
+        </div>
+    </div>
+    <DIv style="border: 4px solid rgb(221, 215, 215);">
+        <div class="details-container">
+            <div class="Account-div"> <i class="fas fa-sort-down st" style="margin-right: 10px;"></i>
+                <div> <a style="text-decoration: none; color: white;" href="index.html">CLICK HERE FOR WITHDRAWAL</a>
+                </div>
+            </div>
+            <div class="bank-div">
+                <div>Bank acounts</div>
+                <div>Total available balance</div>
+            </div>
+            <div class="menu-div-amount">
+                <nav>
+                    <ul>
+                        <li>Amount<i class="fas fa-sort-down st" style="margin-left: 10px;"></i></li>
+                        <li>Available balance <i class="fas fa-sort-down st" style="margin-left: 10px;"></i></li>
+                        <li>Present balance<i class="fas fa-sort-down st" style="margin-left: 10px;"></i></li>
+                        <li>Account type<i class="fas fa-sort-down st" style="margin-left: 10px;"></i></li>
+                    </ul>
+                </nav>
+            </div>
+            <div style="background-color: #002f6c; padding: 2px;"></div>
+        </div>
+        <div class="COMMERCIAL-main-container">
+            <div class="menu-div-amount">
+                <nav>
+                    <ul>
+                        <li style="margin-right: 50px; color: #002f6c;">COMMERCIAL <BR>CHECKING</BR></li>
+                        <li style="margin-right: 190px; color: #002f6c;">--- </li>
+                        <li>--</li>
+                        <li class="commercial-list-div" style="margin-left: 40px; color: #002f6c;">Checking</li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="menu-div-amount">
+                <nav>
+                    <ul>
+                        <li style="margin-right: 50px; color: #002f6c;">COMMERCIAL <BR>CHECKING</BR></li>
+                        <li style="margin-right: 120px; color: #002f6c;">$47,000 </li>
+                        <li class="commercial-list-div" class="commercial-list-div">$47,000</li>
+                        <li class="commercial-list-div" style="margin-left: 20px; color: #002f6c;">Checking</li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="menu-div-amount">
+                <nav>
+                    <ul>
+                        <li style="margin-right: 50px; color: #002f6c;">COMMERCIAL <BR>CHECKING</BR></li>
+                        <li style="margin-right: 80px; color: #002f6c;">$334,893.95 </li>
+                        <li class="commercial-list-div" class="commercial-list-div">$334,893.95</li>
+                        <li class="commercial-list-div" style="color: #002f6c;">Checking</li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="menu-div-amount">
+                <nav>
+                    <ul>
+                        <li style="margin-right: 50px; color: #002f6c;">COMMERCIAL <BR>CHECKING</BR></li>
+                        <li style="margin-right: 80px; color: #002f6c;">$90,521.09 </li>
+                        <li class="commercial-list-div" class="commercial-list-div">$90,521.09</li>
+                        <li class="commercial-list-div" style="margin-left: 20px; color: #002f6c;">Checking</li>
+                    </ul>
+                </nav>
+            </div>
+        </DIv>
+
+    </div>
+
+</body>
+
+</html>
