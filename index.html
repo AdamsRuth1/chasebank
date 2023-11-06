@@ -160,11 +160,6 @@
             gap: 10px;
         }
 
-        .details-container {
-            align-items: center;
-            padding: 20px;
-        }
-
         .Account-div {
             padding: 15px;
             border: 2px solid rgb(228, 219, 219);
@@ -181,19 +176,6 @@
             display: flex;
             justify-content: space-between;
         }
-
-        .menu-div-amount {
-            background-color: white;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        .menu-div-amount nav li {
-            margin: 10px;
-            color: rgb(20, 19, 19);
-            padding: 0 25px;
-            cursor: pointer;
-        }
-
         @media screen and (min-width: 280px) and (max-width: 1000px) {
             body {
                 margin: 0;
@@ -247,19 +229,10 @@
             .showing-div {
                 margin-left: 10px;
             }
-
-            .menu-div-amount nav ul li {
-                font-size: 15px;
-                margin-right: 10px;
-                margin-top: -20px;
-                margin-bottom: -10px;
-                padding: 8px;
-                margin-left: -20px;
+            .commercial-div{
+                font-size: 10px;
             }
 
-            .commercial-list-div {
-                display: none;
-            }
         }
     </style>
 </head>
@@ -277,7 +250,7 @@
         <div class="chase-business">
             <p class="BUSINESS" style="color: white; margin-left: 50px; margin-top: 25px; font-size:
         xx-large; font-family: Arial, Helvetica, sans-serif; font-family: helvetica;"> CHASE </p>
-            <p style="margin-top: 35px; margin-left: 5px; color: rgb(219, 211, 211); font-family: robo;">for</p>
+            <p style="margin-top: 35px; margin-left: 5px; color: rgb(219, 211, 211); font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">for</p>
             <p
                 style="color: white; margin-top: 25px; font-size: xx-large; color: rgb(219, 211, 211); margin-left: 3px;">
                 BUSINESS</p>
@@ -333,66 +306,59 @@
                 </div>
             </div>
             <div class="bank-div">
-                <div>Bank acounts</div>
-                <div>Total available balance</div>
+                <div>Bank accounts</div>
+                <div>Total available balance <br>$47,00.956</div>
             </div>
-            <div class="menu-div-amount">
-                <nav>
-                    <ul>
-                        <li>Amount<i class="fas fa-sort-down st" style="margin-left: 10px;"></i></li>
-                        <li>Available balance <i class="fas fa-sort-down st" style="margin-left: 10px;"></i></li>
-                        <li>Present balance<i class="fas fa-sort-down st" style="margin-left: 10px;"></i></li>
-                        <li>Account type<i class="fas fa-sort-down st" style="margin-left: 10px;"></i></li>
-                    </ul>
-                </nav>
+            <div style="padding: 10px; background-color: #002f6c; margin-bottom: 20px;"></div>
+            <DIV class="commercial-div" style="display: flex; justify-content: space-between;">
+                <div style="margin-left: 20px;">
+                <div style="padding-bottom: 20px;">Amount</div> 
+                <div style="padding-bottom: 20px;">COMMERCIAL <br> CHECKING</div>
+                <div style="padding-bottom: 20px;">COMMERCIAL <br> CHECKING</div> 
+                <div style="padding-bottom: 20px;">COMMERCIAL <br> CHECKING</div>
+                <div style="padding-bottom: 20px;">COMMERCIAL <br> CHECKING</div>
+                <div style="padding-bottom: 20px;">COMMERCIAL <br> CHECKING</div>
+                <div style="padding-bottom: 0px;">COMMERCIAL <br> CHECKING</div>
             </div>
-            <div style="background-color: #002f6c; padding: 2px;"></div>
-        </div>
-        <div class="COMMERCIAL-main-container">
-            <div class="menu-div-amount">
-                <nav>
-                    <ul>
-                        <li style="margin-right: 50px; color: #002f6c;">COMMERCIAL <BR>CHECKING</BR></li>
-                        <li style="margin-right: 190px; color: #002f6c;">--- </li>
-                        <li>--</li>
-                        <li class="commercial-list-div" style="margin-left: 40px; color: #002f6c;">Checking</li>
-                    </ul>
-                </nav>
+        
+            <div>
+                <div style="padding-bottom: 20px;">Available balance</div> 
+                <div style="padding-bottom: 20px;">$47,00.95</div>
+                <div style="padding-bottom: 20px;">$334,893.95</div>
+                 <div style="padding-bottom: 20px;">$90,521.09</div>
+                <div style="padding-bottom: 20px;">$90,521.09</div>
+                <div style="padding-bottom: 20px;">$90,521.09</div>
+                <div style="padding-bottom: 20px;">$90,521.09</div>
+                <div style="padding-bottom: 20px;">$90,521.09</div>
+                <div style="padding-top: 20px;">$90,521.09</div>
+                
             </div>
-            <div class="menu-div-amount">
-                <nav>
-                    <ul>
-                        <li style="margin-right: 50px; color: #002f6c;">COMMERCIAL <BR>CHECKING</BR></li>
-                        <li style="margin-right: 120px; color: #002f6c;">$47,000 </li>
-                        <li class="commercial-list-div" class="commercial-list-div">$47,000</li>
-                        <li class="commercial-list-div" style="margin-left: 20px; color: #002f6c;">Checking</li>
-                    </ul>
-                </nav>
+            <div>
+                <div style="padding-bottom: 20px;">Present balance</div>
+                 <div style="padding-bottom: 20px;">$47,00.95</div>
+                 <div style="padding-bottom: 20px;">$334,893.95</div> 
+                 <div style="padding-bottom: 20px;">$90,521.09</div>
+                <div style="padding-bottom: 20px;">$90,521.09</div>
+                <div style="padding-bottom: 20px;">$90,521.09</div>
+                <div style="padding-bottom: 20px;">$90,521.09</div>
+                <div style="padding-bottom: 20px;">$90,521.09</div>
+                <div style="padding-top: 20px;">$90,521.09</div>
+                
             </div>
-            <div class="menu-div-amount">
-                <nav>
-                    <ul>
-                        <li style="margin-right: 50px; color: #002f6c;">COMMERCIAL <BR>CHECKING</BR></li>
-                        <li style="margin-right: 80px; color: #002f6c;">$334,893.95 </li>
-                        <li class="commercial-list-div" class="commercial-list-div">$334,893.95</li>
-                        <li class="commercial-list-div" style="color: #002f6c;">Checking</li>
-                    </ul>
-                </nav>
+            <div style="margin-right: 20px;">
+                <div style="padding-bottom: 20px;">Account type</div>
+                 <div style="padding-bottom: 20px;">Checking</div>
+                 <div style="padding-bottom: 20px;">Checking</div>
+                  <div style="padding-bottom: 20px;">Checking</div>
+                <div style="padding-bottom: 20px;">Checking</div>
+                <div style="padding-bottom: 20px;">Checking</div>
+                <div style="padding-bottom: 20px;">Checking</div>
+                <div style="padding-bottom: 20px;">Checking</div>
+                <div style="padding-top: 20px;">Checking</div>
             </div>
-            <div class="menu-div-amount">
-                <nav>
-                    <ul>
-                        <li style="margin-right: 50px; color: #002f6c;">COMMERCIAL <BR>CHECKING</BR></li>
-                        <li style="margin-right: 80px; color: #002f6c;">$90,521.09 </li>
-                        <li class="commercial-list-div" class="commercial-list-div">$90,521.09</li>
-                        <li class="commercial-list-div" style="margin-left: 20px; color: #002f6c;">Checking</li>
-                    </ul>
-                </nav>
-            </div>
-        </DIv>
-
-    </div>
-
+        
+        </DIV>
+            
 </body>
 
 </html>
