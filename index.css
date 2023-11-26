@@ -65,6 +65,9 @@ body {
     background-color: rgb(239, 232, 232);
     border: 2px solid rgb(202, 198, 198);
 }
+.menu-div2 a{
+    color: black;
+}
 
 .menu-div2 nav li {
     color: black;
@@ -72,18 +75,22 @@ body {
 
 }
 
-nav ul {
+ ul {
     list-style: none;
     display: flex;
     margin: 5px;
     padding: 5px;
 }
 
-nav li {
+ li {
     margin: 10px;
     color: white;
     padding: 0 25px;
     cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: white;
 }
 
 .menu-div ul li {
